@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory List</title>
+</head>
+<body>
+    <h1>Inventory List</h1>
+    <nav>
+        <a href="/">Inventory</a> |
+        <a href="/add-item">Add Item</a> |
+        <a href="/overview">Overview</a>
+    </nav>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Name</th><th>Current Stock</th><th>Production Price</th><th>Sell Price</th><th>Min Stock</th><th>Max Stock</th><th>Actions</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.current_stock }}</td>
+            <td>{{ item.production_price }}</td>
+            <td>{{ item.sell_price }}</td>
+            <td>{{ item.min_stock }}</td>
+            <td>{{ item.max_stock }}</td>
+            <td>
+                <a href="/edit/{{ item.id }}">Edit</a> |
+                <a href="/delete/{{ item.id }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+

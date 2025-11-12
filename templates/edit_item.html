@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Item</title>
+</head>
+<body>
+    <h1>Edit Item</h1>
+    <nav>
+        <a href="/">Inventory</a> |
+        <a href="/add-item">Add Item</a> |
+        <a href="/overview">Overview</a>
+    </nav>
+
+    <form method="POST">
+        Name: <input name="name" value="{{ item.name }}"><br>
+        Current Stock: <input type="number" name="current_stock" value="{{ item.current_stock }}"><br>
+        Production Price: <input type="number" step="0.01" name="production_price" value="{{ item.production_price }}"><br>
+        Sell Price: <input type="number" step="0.01" name="sell_price" value="{{ item.sell_price }}"><br>
+        Min Stock: <input type="number" name="min_stock" value="{{ item.min_stock }}"><br>
+        Max Stock: <input type="number" name="max_stock" value="{{ item.max_stock }}"><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

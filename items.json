@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "apples",
+        "production_price": 1.0,
+        "sell_price": 2.0,
+        "current_stock": 5,
+        "min_stock": 10,
+        "max_stock": 20
+    }
+]
