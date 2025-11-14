@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Overview</title>
-</head>
-<body>
-    <h1>Overview</h1>
+<html lang="en">
+    <head>
+        <title>Overview</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h1>Overview</h1>
 
-    <nav>
-        <a href="/">Inventory</a> |
-        <a href="/add-item">Add Item</a> |
-        <a href="/overview">Overview</a>
-    </nav>
+        <nav>
+            <a href="/">Inventory</a>
+            <a href="/add-item">Add Item</a>
+            <a href="/overview">Overview</a>
+        </nav>
 
-    <h3>Total Inventory Value (Cost): ${{ total_cost_value }}</h3>
-    <h3>Total Inventory Value (Sell Price): ${{ total_sell_value }}</h3>
+        <h3>Total Inventory Value (Cost): ${{ total_cost_value }}</h3>
+        <h3>Total Inventory Value (Sell Price): ${{ total_sell_value }}</h3>
 
-    <h3>Low Stock (stock is below min stock)</h3>
-    <ul>
-        {% for i in low_stock %}
-        <li>{{ i.name }} ({{ i.current_stock }})</li>
-        {% endfor %}
-    </ul>
+        <h3>Low Stock (stock is below min stock)</h3>
+        <ul>
+            {% for i in low_stock %}
+            <li>{{ i.name }} ({{ i.current_stock }})</li>
+            {% endfor %}
+        </ul>
 
-    <h3>High Stock (stock is above max stock)</h3>
-    <ul>
-        {% for i in high_stock %}
-        <li>{{ i.name }} ({{ i.current_stock }})</li>
-        {% endfor %}
-    </ul>
+        <h3>High Stock (stock is above max stock)</h3>
+        <ul>
+            {% for i in high_stock %}
+            <li>{{ i.name }} ({{ i.current_stock }})</li>
+            {% endfor %}
+        </ul>
 
-</body>
+    </body>
 </html>

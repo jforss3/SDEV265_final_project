@@ -61,6 +61,15 @@ def edit_item(item_id):
 
     return render_template("edit_item.html", item=item)
 
+def change_stock(item_id: int, change_amount: int):
+    items = load_items()
+    item = next((i for i in items if i["id"] == item_id), None)
+    
+    if not item:
+        raise ValueError("item_id not found")
+    
+    item["current_stock"] += change_amount
+
 # Delete Item
 @app.route("/delete/<int:item_id>")
 def delete_item(item_id):
