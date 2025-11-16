@@ -69,6 +69,7 @@ def change_stock(item_id: int, change_amount: int):
         raise ValueError("item_id not found")
     
     item["current_stock"] += change_amount
+    save_items(items)
 
 # Delete Item
 @app.route("/delete/<int:item_id>")
