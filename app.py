@@ -61,6 +61,7 @@ def edit_item(item_id):
 
     return render_template("edit_item.html", item=item)
 
+# Change Stock
 def change_stock(item_id: int, change_amount: int):
     items = load_items()
     item = next((i for i in items if i["id"] == item_id), None)
