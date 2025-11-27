@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Inventory List</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Inventory List</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    </head>
 
-<body>
+    <body>
 
-    <!-- Nav Bar -->
-    <nav class="navbar">
-        <a href="/">Inventory List</a>
-        <a href="/add-item">Add Item</a>
-        <a href="/overview">Overview</a>
-    </nav>
+        <!-- Nav Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Inventory</a></li>
+                <li><a href="/add-item">Add Item</a></li>
+                <li><a href="/overview">Overview</a></li>
+            </ul>
+        </nav>
 
-    <div class="container">
+        <div class="container">
 
-        <h2>Inventory List</h2>
+            <h2>Inventory List</h2>
 
-        <table class="inventory-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Current Stock</th>
-                    <th>Production Price</th>
-                    <th>Selling Price</th>
-                    <th>Min Stock</th>
-                    <th>Max Stock</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Current Stock</th>
+                        <th>Production Price</th>
+                        <th>Selling Price</th>
+                        <th>Min Stock</th>
+                        <th>Max Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-                {% for item in items %}
-                <tr>
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.current_stock }}</td>
-                    <td>{{ item.production_price }}</td>
-                    <td>{{ item.sell_price }}</td>
-                    <td>{{ item.min_stock }}</td>
-                    <td>{{ item.max_stock }}</td>
-                    <td>
-                        <a href="/edit/{{ item.id }}">Edit</a>
-                        <a href="/delete/{{ item.id }}">Delete</a>
-                    </td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+                <tbody>
+                    {% for item in items %}
+                    <tr>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.current_stock }}</td>
+                        <td>${{ "{:,.2f}".format(item.production_price) }}</td>
+                        <td>${{ "{:,.2f}".format(item.sell_price) }}</td>
+                        <td>{{ item.min_stock }}</td>
+                        <td>{{ item.max_stock }}</td>
+                        <td>
+                            <a href="/edit/{{ item.id }}" class = "link_button">Edit</a>
+                            <a href="/delete/{{ item.id }}" class = "link_button">Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
 
-    </div>
+        </div>
 
-</body>
+    </body>
 </html>
