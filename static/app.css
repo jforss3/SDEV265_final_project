@@ -1,12 +1,9 @@
-/* table {border: 1px solid #000000;}
-table, th, td {border: 1px solid #000000;} */
 nav {background-color: #26659E; padding: .05em 0em;}
 nav a {text-decoration: none; color: #FFFFFF;}
 nav ul {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; list-style-type: none;}
 thead {background-color: #F0F0F0;}
 th, td {padding: .5em;}
 label {float: left;}
-/* input {float: right;} */
 
 /* classes*/
 .link_button {
@@ -20,9 +17,8 @@ label {float: left;}
 
 .submit_button {
     background-color: #26659E;
-    padding: .1em .2em;
+    padding: .1em .5em;
     border: none;
     color: #FFFFFF;
     font-size: 1.25em;
-    /* text-align: center; */
 }
