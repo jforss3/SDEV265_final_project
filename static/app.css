@@ -1,9 +1,14 @@
+/* nav */
 nav {background-color: #26659E; padding: .05em 0em;}
 nav a {text-decoration: none; color: #FFFFFF;}
 nav ul {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; list-style-type: none;}
+/* table */
 thead {background-color: #F0F0F0;}
 th, td {padding: .5em;}
-label {float: left;}
+/* form */
+form {display: grid; grid-template-rows: auto; grid-template-columns: 10em 10em; gap: 1em 3em;}
+label {font-size: 1.1em;}
+input {width: 100%; font-size: 1.25em;}
 
 /* classes*/
 .link_button {
@@ -17,7 +22,9 @@ label {float: left;}
 
 .submit_button {
     background-color: #26659E;
-    padding: .1em .5em;
+    padding: .2em;
+    justify-self: left;
+    align-self: center;
     border: none;
     color: #FFFFFF;
     font-size: 1.25em;
