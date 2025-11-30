@@ -29,3 +29,19 @@ input {width: 100%; font-size: 1.25em;}
     color: #FFFFFF;
     font-size: 1.25em;
 }
+
+.two_column_layout {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 15em);
+    gap: 1em
+}
+
+.box {
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    padding: 0em 1em;
+}
+.container {
+    padding: 0em 1em;
+}

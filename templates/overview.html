@@ -9,7 +9,7 @@
     <body>
 
         <!-- Nav -->
-        <nav class="navbar">
+        <nav>
             <ul>
                 <li><a href="/">Inventory</a></li>
                 <li><a href="/add-item">Add Item</a></li>
@@ -22,22 +22,22 @@
             <h1>Overview</h1>
 
             <!-- Overview Boxes -->
-            <div class="overview-boxes">
+            <div class="two_column_layout">
 
                 <div class="box">
                     <h3>Total Cost:</h3>
-                    <p class="value">{{ total_cost_value }}</p>
+                    <p>${{ "{:,.2f}".format(total_cost_value) }}</p>
                 </div>
 
                 <div class="box">
                     <h3>Total Selling Value:</h3>
-                    <p class="value">{{ total_sell_value }}</p>
+                    <p>${{ "{:,.2f}".format(total_sell_value) }}</p>
                 </div>
 
             </div>
 
             <!-- Stock Info -->
-            <div class="stock-info">
+            <div>
                 <p>{{ low_stock|length }} items below minimum stock</p>
                 <p>{{ high_stock|length }} items above maximum stock</p>
             </div>
