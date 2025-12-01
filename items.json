@@ -1,14 +1,5 @@
 [
     {
-        "id": 1,
-        "name": "apples",
-        "production_price": 1.0,
-        "sell_price": 2.0,
-        "current_stock": 5,
-        "min_stock": 10,
-        "max_stock": 20
-    },
-    {
         "id": 2,
         "name": "paper",
         "production_price": 5.0,
@@ -16,5 +7,14 @@
         "current_stock": 10,
         "min_stock": 0,
         "max_stock": 0
+    },
+    {
+        "id": 3,
+        "name": "pencils",
+        "production_price": 1.0,
+        "sell_price": 2.0,
+        "current_stock": 10,
+        "min_stock": 5,
+        "max_stock": 20
     }
 ]

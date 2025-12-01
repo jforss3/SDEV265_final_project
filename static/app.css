@@ -1,31 +1,121 @@
-/* nav */
-nav {background-color: #26659E; padding: .05em 0em;}
-nav a {text-decoration: none; color: #FFFFFF;}
-nav ul {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; list-style-type: none;}
-/* table */
-thead {background-color: #F0F0F0;}
-th, td {padding: .5em;}
-/* form */
-form {display: grid; grid-template-rows: auto; grid-template-columns: 10em 10em; gap: 1em 3em;}
-label {font-size: 1.1em;}
-input {width: 100%; font-size: 1.25em;}
+/* Nav */
+nav {
+    background-color: #26659E;
+    padding: 1em 0;
+}
 
-/* classes*/
-.link_button {
-    display: inline-block;
-    background-color: #F0F0F0;
-    padding: .25em;
-    color: #000000;
+nav a {
     text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 2em;
+    margin: 1.5em 0;
     text-align: center;
 }
 
-.submit_button {
-    background-color: #26659E;
-    padding: .2em;
-    justify-self: left;
-    align-self: center;
-    border: none;
-    color: #FFFFFF;
+/* Table */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1em;
+}
+
+.inventory-table th,
+.inventory-table td {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.inventory-table thead {
+    background-color: #F0F0F0;
+}
+
+/* Item Forms */
+.item-form {
+    width: 500px;
+    margin: 3em auto 2em auto;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.item-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em 2em;
+    font-size: 1.2em;
+}
+
+.item-form input {
+    width: 100%;
+    padding: 0.5em;
+}
+
+.item-form .submit_button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 0.5em 2em;
     font-size: 1.25em;
+    background: #26659E;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.link_button {
+    display: inline-block;
+    background-color: #F0F0F0;
+    padding: 0.25em 0.5em;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5em 1em;
+}
+
+/* Overview Boxes */
+.overview-boxes {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.box {
+    flex: 1;
+    max-width: 450px;
+    background-color: #F0F0F0;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* Stock Info */
+.stock-info {
+    margin-top: 1.5em;
+    background-color: #F0F0F0;
+    padding: 1em;
+    border-radius: 6px;
+    text-align: center;
 }
