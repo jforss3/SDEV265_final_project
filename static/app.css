@@ -70,7 +70,6 @@ h1, h2 {
     justify-self: center;
     padding: 0.5em 2em;
     font-size: 1.25em;
-<<<<<<< HEAD
     background: #26659E;
     border: none;
     color: #fff;
@@ -87,6 +86,16 @@ h1, h2 {
     text-decoration: none;
     text-align: center;
     border-radius: 4px;
+}
+
+.submit_button {
+    background-color: #26659E;
+    padding: 0.2em;
+    justify-self: left;
+    align-self: center;
+    border: none;
+    color: #fff;
+    font-size: 1.25em;
 }
 
 /* Container */
@@ -120,22 +129,3 @@ h1, h2 {
     border-radius: 6px;
     text-align: center;
 }
-=======
-}
-
-.two_column_layout {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(2, 15em);
-    gap: 1em
-}
-
-.box {
-    background-color: #F0F0F0;
-    border-radius: 4px;
-    padding: 0em 1em;
-}
-.container {
-    padding: 0em 1em;
-}
->>>>>>> 3909eab126297726474a4c94da8d2023c0158cb7
