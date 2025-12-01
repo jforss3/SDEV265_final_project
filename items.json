@@ -16,5 +16,14 @@
         "current_stock": 10,
         "min_stock": 5,
         "max_stock": 20
+    },
+    {
+        "id": 4,
+        "name": "iPad",
+        "production_price": 1000.0,
+        "sell_price": 1500.0,
+        "current_stock": 125,
+        "min_stock": 100,
+        "max_stock": 500
     }
 ]

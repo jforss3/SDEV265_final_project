@@ -63,6 +63,7 @@ def edit_item(item_id):
 
 # Change Stock
 def change_stock(item_id: int, change_amount: int):
+    """Meant to be used by other systems (such as an online ordering system) to change the current stock."""
     items = load_items()
     item = next((i for i in items if i["id"] == item_id), None)
     
