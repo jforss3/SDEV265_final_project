@@ -68,13 +68,6 @@ h1, h2 {
 .item-form .submit_button {
     grid-column: 1 / -1;
     justify-self: center;
-    padding: 0.5em 2em;
-    font-size: 1.25em;
-    background: #26659E;
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 /* Buttons */
@@ -89,13 +82,13 @@ h1, h2 {
 }
 
 .submit_button {
-    background-color: #26659E;
-    padding: 0.2em;
-    justify-self: left;
-    align-self: center;
+    padding: 0.5em 2em;
+    font-size: 1.25em;
+    background: #26659E;
     border: none;
     color: #fff;
-    font-size: 1.25em;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Container */

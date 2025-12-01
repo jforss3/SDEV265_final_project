@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "apples",
+        "production_price": 5.0,
+        "sell_price": 7.5,
+        "current_stock": 8,
+        "min_stock": 5,
+        "max_stock": 10
+    },
+    {
+        "id": 2,
+        "name": "computer",
+        "production_price": 1000.0,
+        "sell_price": 1500.0,
+        "current_stock": 5,
+        "min_stock": 10,
+        "max_stock": 20
+    },
+    {
+        "id": 3,
+        "name": "banana",
+        "production_price": 5.0,
+        "sell_price": 7.45,
+        "current_stock": 30,
+        "min_stock": 15,
+        "max_stock": 25
+    },
+    {
+        "id": 4,
+        "name": "paper",
+        "production_price": 8.0,
+        "sell_price": 15.0,
+        "current_stock": 3,
+        "min_stock": 10,
+        "max_stock": 25
+    }
+]
