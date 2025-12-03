@@ -42,8 +42,9 @@ http://127.0.0.1:5000
 
 ## How to Use
 
-- **Main Page** (`/`) - View all inventory items, add new items, edit existing items
+- **Main Page** (`/`) - View all inventory items and edit or delete existing items
 - **Overview Page** (`/overview`) - See inventory summary, low stock alerts, and overstock items
+- **Add Item Page** (`/add-item`) - Add a new item to the inventory
 - **Edit Item** - Click "Edit" next to any item to modify its details
 - **Delete Item** - Click "Delete" next to any item to remove it (confirmation required)
 
